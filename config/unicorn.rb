@@ -1,4 +1,5 @@
-worker_processes ENV.fetch('WORKER_PROCESSES', 5).to_i
+listen 'unicorn.sock', :backlog => 1024
+worker_processes ENV.fetch('WORKER_PROCESSES', 3).to_i
 timeout ENV.fetch('WORKER_TIMEOUT', 240).to_i
 
 preload_app true
