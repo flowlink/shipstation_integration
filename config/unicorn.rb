@@ -1,5 +1,5 @@
-@dir = File.expand_path(File.dirname(__FILE__))
-listen File.join(@dir, "../unicorn.sock"), :backlog => 1024
+# @dir = File.expand_path(File.dirname(__FILE__))
+# listen File.join(@dir, "../unicorn.sock"), :backlog => 1024
 
 worker_processes ENV.fetch('WORKER_PROCESSES', 3).to_i
 timeout ENV.fetch('WORKER_TIMEOUT', 240).to_i
