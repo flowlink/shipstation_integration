@@ -100,25 +100,14 @@ class ShipStationApp < EndpointBase::Sinatra::Base
   post '/get_shipments' do
     current_page = (@config['page'] || 1).to_i
 
-    query_string = "page=#{current_page}&pageSize=500&shipdatestart=#{since_date}"
+    query_string = "page=#{current_page}&pageSize=500&createDateStart=#{since_time_formatted}&sortBy=createDate"
 
-    response = ShipstationClient.request :get, "Shipments/List?#{query_string}", headers: ship_headers
+    response = ShipstationClient.request :get, "shipments?#{query_string}", headers: ship_headers
 
     shipments = response.body["shipments"]
 
-    added_count = 0
-
     shipments.each do |shipment|
-      # ShipStation cannot give us shipments based on time (only date) so we need to filter the list of
-      # shipments down further using the timestamp provided
-      #
-      # Need to parse value returned from SS as PT
-      next unless ActiveSupport::TimeZone[ZONE].parse(shipment["createDate"]) > since_time
-
-      added_count += 1
-
       shipTo = shipment["shipTo"]
-
       add_object :shipment, {
         id: shipment["orderNumber"].strip,
         tracking: shipment["trackingNumber"],
@@ -139,30 +128,34 @@ class ShipStationApp < EndpointBase::Sinatra::Base
       }
     end
 
-    set_summary "Retrieved #{added_count} shipments from ShipStation" if added_count > 0
+    added_count = shipments.count
 
-    if current_page < response.body['pages'].to_i
+    if added_count == 0
+      result 200
+    elsif current_page < response.body['pages'].to_i
       add_parameter 'page', current_page + 1
 
-      result 206
+      result 206, "Retrieved #{added_count} shipments from ShipStation"
     else
+      Time.zone = ZONE
+      new_since = Time.zone.parse(shipments.last['createDate']) + 1.second
+      add_parameter 'since', new_since.utc.iso8601
       add_parameter 'page', 1
 
-      add_parameter 'since', Time.now.utc.iso8601
-
-      result 200
+      result 200, "Retrieved #{added_count} shipments from ShipStation"
     end
-
   end
 
   private
 
   def since_time
-    Time.parse(@config[:since]).in_time_zone(ZONE)
+    Time.zone = ZONE
+    Time.zone.parse(@config[:since])
   end
 
-  def since_date
-    "#{since_time.year}-#{since_time.month}-#{since_time.day}"
+  def since_time_formatted
+    datetime = since_time
+    datetime.strftime("%Y-%m-%d %H:%M:%S")
   end
 
   def map_carrier(carrier_name)
