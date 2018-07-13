@@ -43,7 +43,7 @@ class ShipStationApp < EndpointBase::Sinatra::Base
     # shipments are already split and will just create "orders" that are identical to the
     # storefront concept of a shipment.
 
-    order = populate_order(@payload[:shipment])
+    order = populate_order(@payload[:shipment] || @payload[:order])
     options = {
       headers: ship_headers.merge("content-type" => "application/json"),
       parameters: order.to_json
