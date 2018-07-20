@@ -273,8 +273,8 @@ class ShipStationApp < EndpointBase::Sinatra::Base
         "sku" => item[:product_id],
         "name" => item[:name],
         "imageUrl" => item[:image_url],
-        "quantity" => item[:quantity],
-        "unitPrice" => item[:price]
+        "quantity" => item[:quantity].try(:to_i),
+        "unitPrice" => item[:price].try(:to_f)
       }
     end
   end
