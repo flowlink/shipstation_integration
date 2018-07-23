@@ -306,6 +306,8 @@ class ShipStationApp < EndpointBase::Sinatra::Base
       'on_hold'
     when 'canceled', 'cancelled'
       'cancelled'
+    when 'awaiting_payment'
+      'awaiting_payment'
     else
       'awaiting_shipment'
     end
