@@ -1,4 +1,4 @@
-FROM rlister/ruby:2.1.6
+FROM rlister/ruby:2.3.0
 MAINTAINER Ric Lister, ric@spreecommerce.com
 
 RUN apt-get update && apt-get install -y \
