@@ -227,7 +227,6 @@ class ShipStationApp < EndpointBase::Sinatra::Base
   end
 
   def populate_order(shipment)
-    puts shipment
     order = {
       "customerEmail" => shipment[:email],
       "customerUsername" => shipment[:email],
