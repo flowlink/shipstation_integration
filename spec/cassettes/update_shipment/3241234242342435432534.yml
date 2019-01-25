@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://562d5d49ceef416b89d077d96c65420c:7ae1264669e845a98052092c7801a704@ssapi.shipstation.com/Orders/List?orderNumber=3241234242342435432534
+    uri: https://32d7b78b1ec14471a73e79a70a962686:248087554b354f68a39270c1e9eb0807@ssapi.shipstation.com/Orders/List?orderNumber=3241234242342435432534
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 19 Feb 2015 15:53:16 GMT
+      - Fri, 25 Jan 2019 16:35:06 GMT
       Expires:
       - "-1"
       Pragma:
@@ -31,9 +31,11 @@ http_interactions:
       Server:
       - Microsoft-IIS/8.0
       Ss-Api-Server:
-      - SS-C-WEB02
+      - SS-E-WEB04
       X-Aspnet-Version:
       - 4.0.30319
+      X-Newrelic-App-Data:
+      - PxQGVFZXCgITXFFRAAQBVV0TGhE1AwE2QgNWEVlbQFtcCxY2VANyMi0ZeBMCBkpAHygIEUMTG1ZKARoDTFZaVQhUClQUFQUeESYKIwRVASdTAXMnJScNdXFGTQRWXUQDOQ==
       X-Powered-By:
       - ASP.NET
       X-Rate-Limit-Limit:
@@ -41,14 +43,18 @@ http_interactions:
       X-Rate-Limit-Remaining:
       - '35'
       X-Rate-Limit-Reset:
-      - '59'
+      - '54'
+      X-Shipstation-Jobs:
+      - I see you like to Hack!  You should work with us!
+      X-Shipstation-Jobs-Link:
+      - http://www.shipstation.com/careers/
       Content-Length:
       - '42'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"orders":[],"total":0,"page":1,"pages":0}'
+      string: '{"orders":[],"total":0,"page":1,"pages":1}'
     http_version: 
-  recorded_at: Thu, 19 Feb 2015 15:53:01 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Fri, 25 Jan 2019 16:35:06 GMT
+recorded_with: VCR 3.0.0

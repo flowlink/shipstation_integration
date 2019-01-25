@@ -1,0 +1,414 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://32d7b78b1ec14471a73e79a70a962686:248087554b354f68a39270c1e9eb0807@ssapi.shipstation.com/Orders/List?orderNumber=4325435345345
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip
+      User-Agent:
+      - unirest-ruby/1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 25 Jan 2019 17:05:00 GMT
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      Server:
+      - Microsoft-IIS/8.0
+      Ss-Api-Server:
+      - SS-E-WEB04
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Newrelic-App-Data:
+      - PxQGVFZXCgITXFFRAAQBVV0TGhE1AwE2QgNWEVlbQFtcCxY2VANyMi0ZeBMCBkpAHygIEUMTG1ZKARoDTFdVWghaCVoUFQUeEVZ4VHUjBlMmB3ZQVlIIAAdGTQRWXUQDOQ==
+      X-Powered-By:
+      - ASP.NET
+      X-Rate-Limit-Limit:
+      - '40'
+      X-Rate-Limit-Remaining:
+      - '40'
+      X-Rate-Limit-Reset:
+      - '59'
+      X-Shipstation-Jobs:
+      - I see you like to Hack!  You should work with us!
+      X-Shipstation-Jobs-Link:
+      - http://www.shipstation.com/careers/
+      Content-Length:
+      - '5095'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJvcmRlcnMiOlt7Im9yZGVySWQiOjQ5NzUzNDc2MSwib3JkZXJOdW1iZXIi
+        OiI0MzI1NDM1MzQ1MzQ1Iiwib3JkZXJLZXkiOiI2ZmNjYWUyNjUyNzk0OTc1
+        YmYwOGY2NzhlYWI5OWRlOCIsIm9yZGVyRGF0ZSI6IjIwMTQtMDYtMDJUMDg6
+        Mzg6MjMuMDAwMDAwMCIsImNyZWF0ZURhdGUiOiIyMDE5LTAxLTI1VDA4OjU1
+        OjE4LjUyMzAwMDAiLCJtb2RpZnlEYXRlIjoiMjAxOS0wMS0yNVQwODo1NDo0
+        MS41NjMwMDAwIiwicGF5bWVudERhdGUiOiIyMDE0LTA2LTAyVDA4OjM4OjIz
+        LjAwMDAwMDAiLCJzaGlwQnlEYXRlIjpudWxsLCJvcmRlclN0YXR1cyI6ImF3
+        YWl0aW5nX3NoaXBtZW50IiwiY3VzdG9tZXJJZCI6bnVsbCwiY3VzdG9tZXJV
+        c2VybmFtZSI6bnVsbCwiY3VzdG9tZXJFbWFpbCI6bnVsbCwiYmlsbFRvIjp7
+        Im5hbWUiOiJCcnVubyBCdWNjb2xvIiwiY29tcGFueSI6IlNwcmVlIENvbW1l
+        cmNlIiwic3RyZWV0MSI6IlJ1YSBDYW5hcmlvLCAxODMiLCJzdHJlZXQyIjoi
+        Iiwic3RyZWV0MyI6bnVsbCwiY2l0eSI6IlPDo28gUGF1bG8iLCJzdGF0ZSI6
+        IlNQIiwicG9zdGFsQ29kZSI6IjAxMTU1LTAzMCIsImNvdW50cnkiOiJCUiIs
+        InBob25lIjoiNTUxMTk1NTExMTA5MSIsInJlc2lkZW50aWFsIjpudWxsLCJh
+        ZGRyZXNzVmVyaWZpZWQiOm51bGx9LCJzaGlwVG8iOnsibmFtZSI6IkJydW5v
+        IEJ1Y2NvbG8iLCJjb21wYW55IjoiU3ByZWUgQ29tbWVyY2UiLCJzdHJlZXQx
+        IjoiUnVhIENhbmFyaW8sIDE4MyIsInN0cmVldDIiOiIiLCJzdHJlZXQzIjpu
+        dWxsLCJjaXR5IjoiU8OjbyBQYXVsbyIsInN0YXRlIjoiU1AiLCJwb3N0YWxD
+        b2RlIjoiMDExNTUtMDMwIiwiY291bnRyeSI6IkJSIiwicGhvbmUiOiI1NTEx
+        OTU1MTExMDkxIiwicmVzaWRlbnRpYWwiOnRydWUsImFkZHJlc3NWZXJpZmll
+        ZCI6IkFkZHJlc3MgdmFsaWRhdGlvbiB3YXJuaW5nIn0sIml0ZW1zIjpbeyJv
+        cmRlckl0ZW1JZCI6NzYwMzAzODgyLCJsaW5lSXRlbUtleSI6bnVsbCwic2t1
+        IjoiU1BSRUUtVC1TSElSVCIsIm5hbWUiOiJTcHJlZSBULVNoaXJ0IiwiaW1h
+        Z2VVcmwiOm51bGwsIndlaWdodCI6bnVsbCwicXVhbnRpdHkiOjksInVuaXRQ
+        cmljZSI6OS4wMCwidGF4QW1vdW50IjpudWxsLCJzaGlwcGluZ0Ftb3VudCI6
+        bnVsbCwid2FyZWhvdXNlTG9jYXRpb24iOm51bGwsIm9wdGlvbnMiOltdLCJw
+        cm9kdWN0SWQiOjM5MDczMzkxLCJmdWxmaWxsbWVudFNrdSI6bnVsbCwiYWRq
+        dXN0bWVudCI6ZmFsc2UsInVwYyI6bnVsbCwiY3JlYXRlRGF0ZSI6IjIwMTkt
+        MDEtMjVUMDg6NTU6MTguNTIzIiwibW9kaWZ5RGF0ZSI6IjIwMTktMDEtMjVU
+        MDg6NTU6MTguNTIzIn1dLCJvcmRlclRvdGFsIjo4MS4wMCwiYW1vdW50UGFp
+        ZCI6MC4wMCwidGF4QW1vdW50IjowLjAwLCJzaGlwcGluZ0Ftb3VudCI6MC4w
+        MCwiY3VzdG9tZXJOb3RlcyI6bnVsbCwiaW50ZXJuYWxOb3RlcyI6bnVsbCwi
+        Z2lmdCI6ZmFsc2UsImdpZnRNZXNzYWdlIjpudWxsLCJwYXltZW50TWV0aG9k
+        IjpudWxsLCJyZXF1ZXN0ZWRTaGlwcGluZ1NlcnZpY2UiOm51bGwsImNhcnJp
+        ZXJDb2RlIjoic3RhbXBzX2NvbSIsInNlcnZpY2VDb2RlIjoidXNwc19maXJz
+        dF9jbGFzc19tYWlsIiwicGFja2FnZUNvZGUiOiJwYWNrYWdlIiwiY29uZmly
+        bWF0aW9uIjoibm9uZSIsInNoaXBEYXRlIjpudWxsLCJob2xkVW50aWxEYXRl
+        IjpudWxsLCJ3ZWlnaHQiOnsidmFsdWUiOjAuMDAsInVuaXRzIjoib3VuY2Vz
+        IiwiV2VpZ2h0VW5pdHMiOjF9LCJkaW1lbnNpb25zIjpudWxsLCJpbnN1cmFu
+        Y2VPcHRpb25zIjp7InByb3ZpZGVyIjpudWxsLCJpbnN1cmVTaGlwbWVudCI6
+        ZmFsc2UsImluc3VyZWRWYWx1ZSI6MC4wfSwiaW50ZXJuYXRpb25hbE9wdGlv
+        bnMiOnsiY29udGVudHMiOiJtZXJjaGFuZGlzZSIsImN1c3RvbXNJdGVtcyI6
+        W3siY3VzdG9tc0l0ZW1JZCI6NjMxMTkzNTcsImRlc2NyaXB0aW9uIjoiU3By
+        ZWUgVC1TaGlydCIsInF1YW50aXR5Ijo5LCJ2YWx1ZSI6OS4wMCwiaGFybW9u
+        aXplZFRhcmlmZkNvZGUiOiIiLCJjb3VudHJ5T2ZPcmlnaW4iOiJVUyJ9XSwi
+        bm9uRGVsaXZlcnkiOiJyZXR1cm5fdG9fc2VuZGVyIn0sImFkdmFuY2VkT3B0
+        aW9ucyI6eyJ3YXJlaG91c2VJZCI6MTQ2MDAzLCJub25NYWNoaW5hYmxlIjpm
+        YWxzZSwic2F0dXJkYXlEZWxpdmVyeSI6ZmFsc2UsImNvbnRhaW5zQWxjb2hv
+        bCI6ZmFsc2UsIm1lcmdlZE9yU3BsaXQiOmZhbHNlLCJtZXJnZWRJZHMiOltd
+        LCJwYXJlbnRJZCI6bnVsbCwic3RvcmVJZCI6MTI3NjYwLCJjdXN0b21GaWVs
+        ZDEiOm51bGwsImN1c3RvbUZpZWxkMiI6bnVsbCwiY3VzdG9tRmllbGQzIjpu
+        dWxsLCJzb3VyY2UiOm51bGwsImJpbGxUb1BhcnR5IjpudWxsLCJiaWxsVG9B
+        Y2NvdW50IjpudWxsLCJiaWxsVG9Qb3N0YWxDb2RlIjpudWxsLCJiaWxsVG9D
+        b3VudHJ5Q29kZSI6bnVsbCwiYmlsbFRvTXlPdGhlckFjY291bnQiOm51bGx9
+        LCJ0YWdJZHMiOm51bGwsInVzZXJJZCI6bnVsbCwiZXh0ZXJuYWxseUZ1bGZp
+        bGxlZCI6ZmFsc2UsImV4dGVybmFsbHlGdWxmaWxsZWRCeSI6bnVsbCwibGFi
+        ZWxNZXNzYWdlcyI6bnVsbH0seyJvcmRlcklkIjo0OTc1MzQ5NzgsIm9yZGVy
+        TnVtYmVyIjoiNDMyNTQzNTM0NTM0NSIsIm9yZGVyS2V5IjoiN2VjZTNmNjY1
+        OGU2NDk4MjhjZjFlZjA4MjJhNTE2NTciLCJvcmRlckRhdGUiOiIyMDE0LTA2
+        LTAyVDA4OjM4OjIzLjAwMDAwMDAiLCJjcmVhdGVEYXRlIjoiMjAxOS0wMS0y
+        NVQwODo1NTo0MS44MjcwMDAwIiwibW9kaWZ5RGF0ZSI6IjIwMTktMDEtMjVU
+        MDg6NTU6MDUuMDk3MDAwMCIsInBheW1lbnREYXRlIjoiMjAxNC0wNi0wMlQw
+        ODozODoyMy4wMDAwMDAwIiwic2hpcEJ5RGF0ZSI6bnVsbCwib3JkZXJTdGF0
+        dXMiOiJhd2FpdGluZ19zaGlwbWVudCIsImN1c3RvbWVySWQiOm51bGwsImN1
+        c3RvbWVyVXNlcm5hbWUiOm51bGwsImN1c3RvbWVyRW1haWwiOm51bGwsImJp
+        bGxUbyI6eyJuYW1lIjoiQnJ1bm8gQnVjY29sbyIsImNvbXBhbnkiOiJTcHJl
+        ZSBDb21tZXJjZSIsInN0cmVldDEiOiJSdWEgQ2FuYXJpbywgMTgzIiwic3Ry
+        ZWV0MiI6IiIsInN0cmVldDMiOm51bGwsImNpdHkiOiJTw6NvIFBhdWxvIiwi
+        c3RhdGUiOiJTUCIsInBvc3RhbENvZGUiOiIwMTE1NS0wMzAiLCJjb3VudHJ5
+        IjoiQlIiLCJwaG9uZSI6IjU1MTE5NTUxMTEwOTEiLCJyZXNpZGVudGlhbCI6
+        bnVsbCwiYWRkcmVzc1ZlcmlmaWVkIjpudWxsfSwic2hpcFRvIjp7Im5hbWUi
+        OiJCcnVubyBCdWNjb2xvIiwiY29tcGFueSI6IlNwcmVlIENvbW1lcmNlIiwi
+        c3RyZWV0MSI6IlJ1YSBDYW5hcmlvLCAxODMiLCJzdHJlZXQyIjoiIiwic3Ry
+        ZWV0MyI6bnVsbCwiY2l0eSI6IlPDo28gUGF1bG8iLCJzdGF0ZSI6IlNQIiwi
+        cG9zdGFsQ29kZSI6IjAxMTU1LTAzMCIsImNvdW50cnkiOiJCUiIsInBob25l
+        IjoiNTUxMTk1NTExMTA5MSIsInJlc2lkZW50aWFsIjp0cnVlLCJhZGRyZXNz
+        VmVyaWZpZWQiOiJBZGRyZXNzIHZhbGlkYXRpb24gd2FybmluZyJ9LCJpdGVt
+        cyI6W3sib3JkZXJJdGVtSWQiOjc2MDMwNDMwOSwibGluZUl0ZW1LZXkiOm51
+        bGwsInNrdSI6IlNQUkVFLVQtU0hJUlQiLCJuYW1lIjoiU3ByZWUgVC1TaGly
+        dCIsImltYWdlVXJsIjpudWxsLCJ3ZWlnaHQiOm51bGwsInF1YW50aXR5Ijo5
+        LCJ1bml0UHJpY2UiOjkuMDAsInRheEFtb3VudCI6bnVsbCwic2hpcHBpbmdB
+        bW91bnQiOm51bGwsIndhcmVob3VzZUxvY2F0aW9uIjpudWxsLCJvcHRpb25z
+        IjpbXSwicHJvZHVjdElkIjozOTA3MzM5MSwiZnVsZmlsbG1lbnRTa3UiOm51
+        bGwsImFkanVzdG1lbnQiOmZhbHNlLCJ1cGMiOm51bGwsImNyZWF0ZURhdGUi
+        OiIyMDE5LTAxLTI1VDA4OjU1OjQxLjgyNyIsIm1vZGlmeURhdGUiOiIyMDE5
+        LTAxLTI1VDA4OjU1OjQxLjgyNyJ9XSwib3JkZXJUb3RhbCI6ODEuMDAsImFt
+        b3VudFBhaWQiOjAuMDAsInRheEFtb3VudCI6MC4wMCwic2hpcHBpbmdBbW91
+        bnQiOjAuMDAsImN1c3RvbWVyTm90ZXMiOm51bGwsImludGVybmFsTm90ZXMi
+        Om51bGwsImdpZnQiOmZhbHNlLCJnaWZ0TWVzc2FnZSI6bnVsbCwicGF5bWVu
+        dE1ldGhvZCI6bnVsbCwicmVxdWVzdGVkU2hpcHBpbmdTZXJ2aWNlIjpudWxs
+        LCJjYXJyaWVyQ29kZSI6InN0YW1wc19jb20iLCJzZXJ2aWNlQ29kZSI6InVz
+        cHNfZmlyc3RfY2xhc3NfbWFpbCIsInBhY2thZ2VDb2RlIjoicGFja2FnZSIs
+        ImNvbmZpcm1hdGlvbiI6Im5vbmUiLCJzaGlwRGF0ZSI6bnVsbCwiaG9sZFVu
+        dGlsRGF0ZSI6bnVsbCwid2VpZ2h0Ijp7InZhbHVlIjowLjAwLCJ1bml0cyI6
+        Im91bmNlcyIsIldlaWdodFVuaXRzIjoxfSwiZGltZW5zaW9ucyI6bnVsbCwi
+        aW5zdXJhbmNlT3B0aW9ucyI6eyJwcm92aWRlciI6bnVsbCwiaW5zdXJlU2hp
+        cG1lbnQiOmZhbHNlLCJpbnN1cmVkVmFsdWUiOjAuMH0sImludGVybmF0aW9u
+        YWxPcHRpb25zIjp7ImNvbnRlbnRzIjoibWVyY2hhbmRpc2UiLCJjdXN0b21z
+        SXRlbXMiOlt7ImN1c3RvbXNJdGVtSWQiOjYzMTE5MzY1LCJkZXNjcmlwdGlv
+        biI6IlNwcmVlIFQtU2hpcnQiLCJxdWFudGl0eSI6OSwidmFsdWUiOjkuMDAs
+        Imhhcm1vbml6ZWRUYXJpZmZDb2RlIjoiIiwiY291bnRyeU9mT3JpZ2luIjoi
+        VVMifV0sIm5vbkRlbGl2ZXJ5IjoicmV0dXJuX3RvX3NlbmRlciJ9LCJhZHZh
+        bmNlZE9wdGlvbnMiOnsid2FyZWhvdXNlSWQiOjE0NjAwMywibm9uTWFjaGlu
+        YWJsZSI6ZmFsc2UsInNhdHVyZGF5RGVsaXZlcnkiOmZhbHNlLCJjb250YWlu
+        c0FsY29ob2wiOmZhbHNlLCJtZXJnZWRPclNwbGl0IjpmYWxzZSwibWVyZ2Vk
+        SWRzIjpbXSwicGFyZW50SWQiOm51bGwsInN0b3JlSWQiOjEyNzY2MCwiY3Vz
+        dG9tRmllbGQxIjpudWxsLCJjdXN0b21GaWVsZDIiOm51bGwsImN1c3RvbUZp
+        ZWxkMyI6bnVsbCwic291cmNlIjpudWxsLCJiaWxsVG9QYXJ0eSI6bnVsbCwi
+        YmlsbFRvQWNjb3VudCI6bnVsbCwiYmlsbFRvUG9zdGFsQ29kZSI6bnVsbCwi
+        YmlsbFRvQ291bnRyeUNvZGUiOm51bGwsImJpbGxUb015T3RoZXJBY2NvdW50
+        IjpudWxsfSwidGFnSWRzIjpudWxsLCJ1c2VySWQiOm51bGwsImV4dGVybmFs
+        bHlGdWxmaWxsZWQiOmZhbHNlLCJleHRlcm5hbGx5RnVsZmlsbGVkQnkiOm51
+        bGwsImxhYmVsTWVzc2FnZXMiOm51bGx9XSwidG90YWwiOjIsInBhZ2UiOjEs
+        InBhZ2VzIjoxfQ==
+    http_version: 
+  recorded_at: Fri, 25 Jan 2019 17:05:01 GMT
+- request:
+    method: get
+    uri: https://32d7b78b1ec14471a73e79a70a962686:248087554b354f68a39270c1e9eb0807@ssapi.shipstation.com/Carriers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip
+      User-Agent:
+      - unirest-ruby/1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 25 Jan 2019 17:05:02 GMT
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      Server:
+      - Microsoft-IIS/8.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Newrelic-App-Data:
+      - PxQGVFZXCgITXFFRAAQBVV0TGhE1AwE2QgNWEVlbQFtcCxY2VANyMi0ZdAAUEVFWQhdOLl5CQ0RIARgDTlZNVQdaCVQAFBkDH0cLIgMkcCElAQAkUVsLBQBXQ05RUFsVAWw=
+      X-Powered-By:
+      - ASP.NET
+      X-Rate-Limit-Limit:
+      - '40'
+      X-Rate-Limit-Remaining:
+      - '39'
+      X-Rate-Limit-Reset:
+      - '58'
+      X-Shipstation-Jobs:
+      - I see you like to Hack!  You should work with us!
+      X-Shipstation-Jobs-Link:
+      - http://www.shipstation.com/careers/
+      Content-Length:
+      - '187'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Stamps.com","code":"stamps_com","accountNumber":"sshaaban-128n","requiresFundedAccount":true,"balance":9.5400,"nickname":"NuRelm
+        Dev","shippingProviderId":83346,"primary":true}]'
+    http_version: 
+  recorded_at: Fri, 25 Jan 2019 17:05:03 GMT
+- request:
+    method: get
+    uri: https://32d7b78b1ec14471a73e79a70a962686:248087554b354f68a39270c1e9eb0807@ssapi.shipstation.com/Carriers/ListServices?carrierCode=stamps_com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip
+      User-Agent:
+      - unirest-ruby/1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 25 Jan 2019 17:05:03 GMT
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      Server:
+      - Microsoft-IIS/8.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Newrelic-App-Data:
+      - PxQGVFZXCgITXFFRAAQBVV0TGhE1AwE2QgNWEVlbQFtcCxY2VANyMi0ZdAAUEVFWQhdOLl5CQzUBQ0BaAQMQQBxSFlIUCBoCBFcAUgVUH09VGhVYU1N+cgBQV1AHCXFRInMCEU4AAg5DB2U=
+      X-Powered-By:
+      - ASP.NET
+      X-Rate-Limit-Limit:
+      - '40'
+      X-Rate-Limit-Remaining:
+      - '38'
+      X-Rate-Limit-Reset:
+      - '57'
+      X-Shipstation-Jobs:
+      - I see you like to Hack!  You should work with us!
+      X-Shipstation-Jobs-Link:
+      - http://www.shipstation.com/careers/
+      Content-Length:
+      - '1087'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"carrierCode":"stamps_com","code":"usps_first_class_mail","name":"USPS
+        First Class Mail","domestic":true,"international":false},{"carrierCode":"stamps_com","code":"usps_media_mail","name":"USPS
+        Media Mail","domestic":true,"international":false},{"carrierCode":"stamps_com","code":"usps_parcel_select","name":"USPS
+        Parcel Select Ground","domestic":true,"international":false},{"carrierCode":"stamps_com","code":"usps_priority_mail","name":"USPS
+        Priority Mail","domestic":true,"international":false},{"carrierCode":"stamps_com","code":"usps_priority_mail_express","name":"USPS
+        Priority Mail Express","domestic":true,"international":false},{"carrierCode":"stamps_com","code":"usps_first_class_mail_international","name":"USPS
+        First Class Mail Intl","domestic":false,"international":true},{"carrierCode":"stamps_com","code":"usps_priority_mail_international","name":"USPS
+        Priority Mail Intl","domestic":false,"international":true},{"carrierCode":"stamps_com","code":"usps_priority_mail_express_international","name":"USPS
+        Priority Mail Express Intl","domestic":false,"international":true}]'
+    http_version: 
+  recorded_at: Fri, 25 Jan 2019 17:05:03 GMT
+- request:
+    method: post
+    uri: https://32d7b78b1ec14471a73e79a70a962686:248087554b354f68a39270c1e9eb0807@ssapi.shipstation.com/Orders/CreateOrder
+    body:
+      encoding: UTF-8
+      string: '{"customerEmail":null,"customerUsername":null,"orderNumber":"4325435345345","orderDate":"2014-06-02T15:38:23Z","paymentDate":"2014-06-02T15:38:23Z","orderStatus":"awaiting_shipment","shipTo":{"name":"Brunow
+        Buccolo","street1":"Rua Canario, 183","street2":"","street3":null,"city":"São
+        Paulo","state":"SP","postalCode":"01155-030","country":"BR","phone":"5511955111091","company":null},"billTo":{"name":"Brunow
+        Buccolo","street1":"Rua Canario, 183","street2":"","street3":null,"city":"São
+        Paulo","state":"SP","postalCode":"01155-030","country":"BR","phone":"5511955111091","company":null},"customerNotes":null,"internalNotes":null,"gift":null,"packageCode":"package","advancedOptions":{"storeId":null,"customfield1":null,"customfield2":null,"customfield3":null},"items":[{"lineItemKey":null,"sku":"SPREE-T-SHIRT","name":"Spree
+        T-Shirt","imageUrl":null,"quantity":10,"unitPrice":9.0}],"carrierCode":"stamps_com","serviceCode":"usps_first_class_mail","orderKey":"6fccae2652794975bf08f678eab99de8"}'
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      User-Agent:
+      - unirest-ruby/1.1
+      Content-Length:
+      - '996'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 25 Jan 2019 17:05:04 GMT
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      Server:
+      - Microsoft-IIS/8.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Newrelic-App-Data:
+      - PxQGVFZXCgITXFFRAAQBVV0TGhE1AwE2QgNWEVlbQFtcCxY2VANyMi0ZeBMCBkpAHycTB1ZFUikWVVNBQEpTTABOCEwKAAYHA10BTQhYBU5GAgFRUlp5CgQlIFd0BXRWIRMaVQMKEAdt
+      X-Powered-By:
+      - ASP.NET
+      X-Rate-Limit-Limit:
+      - '40'
+      X-Rate-Limit-Remaining:
+      - '37'
+      X-Rate-Limit-Reset:
+      - '56'
+      X-Shipstation-Jobs:
+      - I see you like to Hack!  You should work with us!
+      X-Shipstation-Jobs-Link:
+      - http://www.shipstation.com/careers/
+      Content-Length:
+      - '2530'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJvcmRlcklkIjo0OTc1MzQ3NjEsIm9yZGVyTnVtYmVyIjoiNDMyNTQzNTM0
+        NTM0NSIsIm9yZGVyS2V5IjoiNmZjY2FlMjY1Mjc5NDk3NWJmMDhmNjc4ZWFi
+        OTlkZTgiLCJvcmRlckRhdGUiOiIyMDE0LTA2LTAyVDA4OjM4OjIzLjAwMDAw
+        MDAiLCJjcmVhdGVEYXRlIjoiMjAxOS0wMS0yNVQwODo1NToxOC41MjMwMDAw
+        IiwibW9kaWZ5RGF0ZSI6IjIwMTktMDEtMjVUMDk6MDU6MDQuNjgzMDAwMCIs
+        InBheW1lbnREYXRlIjoiMjAxNC0wNi0wMlQwODozODoyMy4wMDAwMDAwIiwi
+        c2hpcEJ5RGF0ZSI6bnVsbCwib3JkZXJTdGF0dXMiOiJhd2FpdGluZ19zaGlw
+        bWVudCIsImN1c3RvbWVySWQiOm51bGwsImN1c3RvbWVyVXNlcm5hbWUiOm51
+        bGwsImN1c3RvbWVyRW1haWwiOm51bGwsImJpbGxUbyI6eyJuYW1lIjoiQnJ1
+        bm93IEJ1Y2NvbG8iLCJjb21wYW55IjoiU3ByZWUgQ29tbWVyY2UiLCJzdHJl
+        ZXQxIjoiUnVhIENhbmFyaW8sIDE4MyIsInN0cmVldDIiOiIiLCJzdHJlZXQz
+        IjpudWxsLCJjaXR5IjoiU8OjbyBQYXVsbyIsInN0YXRlIjoiU1AiLCJwb3N0
+        YWxDb2RlIjoiMDExNTUtMDMwIiwiY291bnRyeSI6IkJSIiwicGhvbmUiOiI1
+        NTExOTU1MTExMDkxIiwicmVzaWRlbnRpYWwiOm51bGwsImFkZHJlc3NWZXJp
+        ZmllZCI6bnVsbH0sInNoaXBUbyI6eyJuYW1lIjoiQnJ1bm93IEJ1Y2NvbG8i
+        LCJjb21wYW55IjoiU3ByZWUgQ29tbWVyY2UiLCJzdHJlZXQxIjoiUnVhIENh
+        bmFyaW8sIDE4MyIsInN0cmVldDIiOiIiLCJzdHJlZXQzIjpudWxsLCJjaXR5
+        IjoiU8OjbyBQYXVsbyIsInN0YXRlIjoiU1AiLCJwb3N0YWxDb2RlIjoiMDEx
+        NTUtMDMwIiwiY291bnRyeSI6IkJSIiwicGhvbmUiOiI1NTExOTU1MTExMDkx
+        IiwicmVzaWRlbnRpYWwiOmZhbHNlLCJhZGRyZXNzVmVyaWZpZWQiOiJBZGRy
+        ZXNzIHZhbGlkYXRpb24gd2FybmluZyJ9LCJpdGVtcyI6W3sib3JkZXJJdGVt
+        SWQiOjc2MDMwMzg4MiwibGluZUl0ZW1LZXkiOm51bGwsInNrdSI6IlNQUkVF
+        LVQtU0hJUlQiLCJuYW1lIjoiU3ByZWUgVC1TaGlydCIsImltYWdlVXJsIjpu
+        dWxsLCJ3ZWlnaHQiOm51bGwsInF1YW50aXR5IjoxMCwidW5pdFByaWNlIjo5
+        LjAwLCJ0YXhBbW91bnQiOm51bGwsInNoaXBwaW5nQW1vdW50IjpudWxsLCJ3
+        YXJlaG91c2VMb2NhdGlvbiI6bnVsbCwib3B0aW9ucyI6W10sInByb2R1Y3RJ
+        ZCI6MzkwNzMzOTEsImZ1bGZpbGxtZW50U2t1IjpudWxsLCJhZGp1c3RtZW50
+        IjpmYWxzZSwidXBjIjpudWxsLCJjcmVhdGVEYXRlIjoiMjAxOS0wMS0yNVQw
+        ODo1NToxOC41MjMiLCJtb2RpZnlEYXRlIjoiMjAxOS0wMS0yNVQwODo1NTox
+        OC41MjMifV0sIm9yZGVyVG90YWwiOjkwLjAwLCJhbW91bnRQYWlkIjowLjAw
+        LCJ0YXhBbW91bnQiOjAuMDAsInNoaXBwaW5nQW1vdW50IjowLjAwLCJjdXN0
+        b21lck5vdGVzIjpudWxsLCJpbnRlcm5hbE5vdGVzIjpudWxsLCJnaWZ0Ijpm
+        YWxzZSwiZ2lmdE1lc3NhZ2UiOm51bGwsInBheW1lbnRNZXRob2QiOm51bGws
+        InJlcXVlc3RlZFNoaXBwaW5nU2VydmljZSI6bnVsbCwiY2FycmllckNvZGUi
+        OiJzdGFtcHNfY29tIiwic2VydmljZUNvZGUiOiJ1c3BzX2ZpcnN0X2NsYXNz
+        X21haWwiLCJwYWNrYWdlQ29kZSI6InBhY2thZ2UiLCJjb25maXJtYXRpb24i
+        OiJub25lIiwic2hpcERhdGUiOm51bGwsImhvbGRVbnRpbERhdGUiOm51bGws
+        IndlaWdodCI6eyJ2YWx1ZSI6MC4wMCwidW5pdHMiOiJvdW5jZXMiLCJXZWln
+        aHRVbml0cyI6MX0sImRpbWVuc2lvbnMiOm51bGwsImluc3VyYW5jZU9wdGlv
+        bnMiOnsicHJvdmlkZXIiOm51bGwsImluc3VyZVNoaXBtZW50IjpmYWxzZSwi
+        aW5zdXJlZFZhbHVlIjowLjB9LCJpbnRlcm5hdGlvbmFsT3B0aW9ucyI6eyJj
+        b250ZW50cyI6Im1lcmNoYW5kaXNlIiwiY3VzdG9tc0l0ZW1zIjpbeyJjdXN0
+        b21zSXRlbUlkIjo2MzExOTM1NywiZGVzY3JpcHRpb24iOiJTcHJlZSBULVNo
+        aXJ0IiwicXVhbnRpdHkiOjksInZhbHVlIjo5LjAwLCJoYXJtb25pemVkVGFy
+        aWZmQ29kZSI6IiIsImNvdW50cnlPZk9yaWdpbiI6IlVTIn1dLCJub25EZWxp
+        dmVyeSI6InJldHVybl90b19zZW5kZXIifSwiYWR2YW5jZWRPcHRpb25zIjp7
+        IndhcmVob3VzZUlkIjoxNDYwMDMsIm5vbk1hY2hpbmFibGUiOmZhbHNlLCJz
+        YXR1cmRheURlbGl2ZXJ5IjpmYWxzZSwiY29udGFpbnNBbGNvaG9sIjpmYWxz
+        ZSwibWVyZ2VkT3JTcGxpdCI6ZmFsc2UsIm1lcmdlZElkcyI6W10sInBhcmVu
+        dElkIjpudWxsLCJzdG9yZUlkIjoxMjc2NjAsImN1c3RvbUZpZWxkMSI6bnVs
+        bCwiY3VzdG9tRmllbGQyIjpudWxsLCJjdXN0b21GaWVsZDMiOm51bGwsInNv
+        dXJjZSI6bnVsbCwiYmlsbFRvUGFydHkiOm51bGwsImJpbGxUb0FjY291bnQi
+        Om51bGwsImJpbGxUb1Bvc3RhbENvZGUiOm51bGwsImJpbGxUb0NvdW50cnlD
+        b2RlIjpudWxsLCJiaWxsVG9NeU90aGVyQWNjb3VudCI6bnVsbH0sInRhZ0lk
+        cyI6bnVsbCwidXNlcklkIjpudWxsLCJleHRlcm5hbGx5RnVsZmlsbGVkIjpm
+        YWxzZSwiZXh0ZXJuYWxseUZ1bGZpbGxlZEJ5IjpudWxsLCJsYWJlbE1lc3Nh
+        Z2VzIjpudWxsfQ==
+    http_version: 
+  recorded_at: Fri, 25 Jan 2019 17:05:05 GMT
+recorded_with: VCR 3.0.0

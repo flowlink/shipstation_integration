@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://o%27@ssapi.shipstation.com/Shipments/List?page=1&pageSize=500&shipdatestart=2014-10-22
+    uri: https://wrong:248087554b354f68a39270c1e9eb0807@ssapi.shipstation.com/shipments?createDateStart=2014-10-22%2017:38:23&page=1&pageSize=500&sortBy=createDate
     body:
       encoding: US-ASCII
       string: ''
@@ -16,12 +16,12 @@ http_interactions:
   response:
     status:
       code: 401
-      message: Unauthorized
+      message: UnSHIPSTATION_AUTHORIZATIONorized
     headers:
       Content-Type:
       - text/plain
       Date:
-      - Thu, 19 Feb 2015 15:52:57 GMT
+      - Fri, 25 Jan 2019 16:36:28 GMT
       Www-Authenticate:
       - Basic realm="shipstation"
       X-Rate-Limit-Limit:
@@ -29,14 +29,18 @@ http_interactions:
       X-Rate-Limit-Remaining:
       - '40'
       X-Rate-Limit-Reset:
-      - '3'
+      - '37'
+      X-Shipstation-Jobs:
+      - I see you like to Hack!  You should work with us!
+      X-Shipstation-Jobs-Link:
+      - http://www.shipstation.com/careers/
       Content-Length:
       - '16'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: 401 Unauthorized
+      string: 401 UnSHIPSTATION_AUTHORIZATIONorized
     http_version: 
-  recorded_at: Thu, 19 Feb 2015 15:52:57 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Fri, 25 Jan 2019 16:36:28 GMT
+recorded_with: VCR 3.0.0

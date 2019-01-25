@@ -7,7 +7,8 @@ describe ShipStationApp do
 
   let(:config) do
     {
-      "authorization" => ENV['SHIPSTATION_AUTHORIZATION']
+      "key" => ENV['SHIPSTATION_KEY'],
+      "secret" => ENV['SHIPSTATION_SECRET']
     }
   end
 
@@ -77,8 +78,8 @@ describe ShipStationApp do
               price: 9,
               options: {}
           }],
-          shipping_carrier: "UPS",
-          shipping_method: "UPS Ground",
+          shipping_carrier: "Stamps.com",
+          shipping_method: "USPS First Class Mail",
           created_at: "2014-06-02T15:38:23Z"
         }
       }
@@ -86,8 +87,6 @@ describe ShipStationApp do
 
     it 'creates a shipment with a requested_shipping_service' do
       VCR.use_cassette("add_shipment/#{id}") do
-        # request[:shipment][:requested_shipping_service] = "Cucamonga Express"
-
         post '/add_shipment', request.to_json, {}
       end
 
@@ -97,7 +96,7 @@ describe ShipStationApp do
   end
 
   describe 'POST /update_shipment' do
-    let(:id) { "1414012131" }
+    let(:id) { "4325435345345" }
 
     let(:request) do
       {
@@ -123,8 +122,8 @@ describe ShipStationApp do
               price: 9,
               options: {}
           }],
-          shipping_carrier: "UPS",
-          shipping_method: "UPS Standard",
+          shipping_carrier: "Stamps.com",
+          shipping_method: "USPS First Class Mail",
           created_at: "2014-06-02T15:38:23Z"
         }
       }
@@ -153,7 +152,7 @@ describe ShipStationApp do
 
   it "handles wrong credentials errors" do
     request = { parameters: config.merge(since: "2014-10-23T00:38:23Z") }
-    request[:parameters][:authorization] = "wrong"
+    request[:parameters][:key] = "wrong"
 
     VCR.use_cassette("wrong_key") do
       post '/get_shipments', request.to_json, {}
@@ -168,8 +167,8 @@ describe ShipStationApp do
       shipment: {
         shipping_address: {},
         items: [],
-        shipping_carrier: "UPS",
-        shipping_method: "UPS Standard",
+        shipping_carrier: "Stamps.com",
+        shipping_method: "USPS First Class Mail",
       }
     }
 
