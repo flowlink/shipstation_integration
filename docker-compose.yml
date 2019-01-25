@@ -1,12 +1,9 @@
-version: '3'
+version: "3"
+
 services:
-  shipstation_integration:
+  shipstation-integration:
     build: .
-    image: shipstation-integration
-    environment:
-      - VIRTUAL_HOST=shipstation_integration.flowlink.io
-    restart: always
-    network_mode: bridge
+    ports:
+      - '3001:5000'
     volumes:
       - .:/app
-
