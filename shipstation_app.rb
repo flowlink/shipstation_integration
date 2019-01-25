@@ -45,7 +45,7 @@ class ShipStationApp < EndpointBase::Sinatra::Base
       parameters: build_order_hold_date_payload(order).to_json
     }
     response = ShipstationClient.request :post, "Orders/HoldUntil", options
-    result 200, "Order #{order[:orderKey]} updated with new hold date"
+    result 200, "Order #{order[:shipstation_id]} updated with new hold date"
   end
 
 
@@ -191,7 +191,7 @@ class ShipStationApp < EndpointBase::Sinatra::Base
 
   def build_order_hold_date_payload(order)
     {
-      orderId: order[:orderKey],
+      orderId: order[:shipstation_id],
       holdUntilDate: hold_until_date_formatted(order)
     }
   end
