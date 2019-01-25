@@ -38,19 +38,30 @@ class ShipStationApp < EndpointBase::Sinatra::Base
 
   # REST API doc https://www.mashape.com/shipstation/shipstation
 
-  post '/add_shipment' do
-    # Shipstation wants orders and then it creates shipments. This integration assumes the
-    # shipments are already split and will just create "orders" that are identical to the
-    # storefront concept of a shipment.
-
-    order = populate_order(@payload[:shipment] || @payload[:order])
+  post '/update_order_hold_date' do
+    order = @payload[:shipment] || @payload[:order]
     options = {
       headers: ship_headers.merge("content-type" => "application/json"),
-      parameters: order.to_json
+      parameters: build_order_hold_date_payload(order).to_json
     }
+    response = ShipstationClient.request :post, "Orders/HoldUntil", options
+    result 200, "Order #{order[:shipstation_id]} updated with new hold date"
+  end
 
-    response = ShipstationClient.request :post, "Orders/CreateOrder", options
-    result 200, "Shipment transmitted to ShipStation: #{response.body["orderId"]}"
+
+  # Shipstation wants orders and then it creates shipments. This integration assumes the
+  # shipments are already split and will just create "orders" that are identical to the
+  # storefront concept of a shipment.
+  post '/add_shipment' do
+    response = add_order_or_shipment(@payload[:shipment])
+    add_object :shipment, return_order
+    result 200, "Shipment transmitted to ShipStation: #{response[:shipstation_id]}"
+  end
+
+  post '/add_order' do
+    response = add_order_or_shipment(@payload[:order])
+    add_object :order, response
+    result 200, "Order transmitted to ShipStation: #{response[:shipstation_id]}"
   end
 
   # Error response.body examples:
@@ -148,6 +159,20 @@ class ShipStationApp < EndpointBase::Sinatra::Base
 
   private
 
+  def add_order_or_shipment(order_or_shipment)
+    order = populate_order(order_or_shipment)
+    options = {
+      headers: ship_headers.merge("content-type" => "application/json"),
+      parameters: order.to_json
+    }
+
+    response = ShipstationClient.request :post, "Orders/CreateOrder", options
+    order_or_shipment[:shipstation_id] = response.body["orderId"]
+    order_or_shipment[:orderKey] = response.body["orderKey"]
+
+    order_or_shipment
+  end
+
   def since_time
     Time.zone = ZONE
     Time.zone.parse(@config[:since])
@@ -156,6 +181,19 @@ class ShipStationApp < EndpointBase::Sinatra::Base
   def since_time_formatted
     datetime = since_time
     datetime.strftime("%Y-%m-%d %H:%M:%S")
+  end
+
+  def hold_until_date_formatted(order)
+    Time.zone = ZONE
+    hold_time = Time.zone.parse(order[:hold_until_date])
+    hold_time.strftime("%Y-%m-%d")
+  end
+
+  def build_order_hold_date_payload(order)
+    {
+      orderId: order[:shipstation_id],
+      holdUntilDate: hold_until_date_formatted(order)
+    }
   end
 
   def map_carrier(carrier_name)
@@ -205,6 +243,10 @@ class ShipStationApp < EndpointBase::Sinatra::Base
       "advancedOptions" => populate_advanced(shipment),
       "items" => populate_items(shipment[:items])
     }
+
+    if shipment[:orderKey]
+      order["orderKey"] = shipment[:orderKey]
+    end
 
     if shipment[:ship_by_date]
       order["shipByDate"] = shipment[:ship_by_date]

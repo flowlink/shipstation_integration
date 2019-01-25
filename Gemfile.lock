@@ -43,8 +43,8 @@ GEM
     pry-byebug (3.3.0)
       byebug (~> 8.0)
       pry (~> 0.10)
-    rack (1.6.4)
-    rack-protection (1.5.3)
+    rack (1.6.11)
+    rack-protection (1.5.5)
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -105,6 +105,8 @@ DEPENDENCIES
   i18n
   pry
   pry-byebug
+  rack (>= 1.6.11)
+  rack-protection (>= 1.5.5)
   rack-test
   rspec
   shotgun
@@ -117,4 +119,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   1.12.5
+   2.0.1
