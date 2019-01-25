@@ -11,6 +11,11 @@ gem 'foreman'
 gem 'unicorn'
 gem 'honeybadger'
 
+# security updates suggested by GitHub
+gem "rack", ">= 1.6.11"
+gem "rack-protection", ">= 1.5.5"
+# end security updates
+
 group :development do
   gem 'pry'
   gem 'shotgun'
