@@ -43,3 +43,10 @@ The following parameters must be setup within [FlowLink](http://flowlink.io/):
 * __secret__ => Used on ALL workflows
 * __authorization__ => Used on ALL workflows (NOTE: Only used for Legacy clients - key/secret not needed if authorization is used. Shipstation may no longer support this API access)
 * __x_partner__ => Used on ALL workflows (NOTE: Most likely only used for Legacy clients as well. Shipstation may no longer support this API access)
+
+## How to run tests
+
+You can just run 'em like this:
+```
+docker-compose run -e SHIPSTATION_KEY=<API KEY> -e SHIPSTATION_SECRET=<API SECRET> --rm shipstation-integration bundle exec rspec
+```

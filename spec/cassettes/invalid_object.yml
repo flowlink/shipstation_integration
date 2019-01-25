@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://562d5d49ceef416b89d077d96c65420c:7ae1264669e845a98052092c7801a704@ssapi.shipstation.com/Carriers
+    uri: https://32d7b78b1ec14471a73e79a70a962686:248087554b354f68a39270c1e9eb0807@ssapi.shipstation.com/Carriers
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 19 Feb 2015 15:53:11 GMT
+      - Fri, 25 Jan 2019 16:53:12 GMT
       Expires:
       - "-1"
       Pragma:
@@ -32,55 +32,8 @@ http_interactions:
       - Microsoft-IIS/8.0
       X-Aspnet-Version:
       - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      X-Rate-Limit-Limit:
-      - '40'
-      X-Rate-Limit-Remaining:
-      - '40'
-      X-Rate-Limit-Reset:
-      - '3'
-      Content-Length:
-      - '98'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '[{"name":"UPS","code":"ups","accountNumber":"R96E03","requiresFundedAccount":false,"balance":0.0}]'
-    http_version: 
-  recorded_at: Thu, 19 Feb 2015 15:52:57 GMT
-- request:
-    method: get
-    uri: https://562d5d49ceef416b89d077d96c65420c:7ae1264669e845a98052092c7801a704@ssapi.shipstation.com/Carriers/ListServices?carrierCode=ups
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*; q=0.5, application/xml"
-      Accept-Encoding:
-      - gzip
-      User-Agent:
-      - unirest-ruby/1.1
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Thu, 19 Feb 2015 15:53:12 GMT
-      Expires:
-      - "-1"
-      Pragma:
-      - no-cache
-      Server:
-      - Microsoft-IIS/8.0
-      X-Aspnet-Version:
-      - 4.0.30319
+      X-Newrelic-App-Data:
+      - PxQGVFZXCgITXFFRAAQBVV0TGhE1AwE2QgNWEVlbQFtcCxY2VANyMi0ZdAAUEVFWQhdOLl5CQ0RIARgDTlZNVAZTCloAChgfAkkbV3MiclNRBXYkVVJ+AnJXI0AbV1YKF1Rr
       X-Powered-By:
       - ASP.NET
       X-Rate-Limit-Limit:
@@ -88,61 +41,91 @@ http_interactions:
       X-Rate-Limit-Remaining:
       - '39'
       X-Rate-Limit-Reset:
-      - '3'
+      - '48'
+      X-Shipstation-Jobs:
+      - I see you like to Hack!  You should work with us!
+      X-Shipstation-Jobs-Link:
+      - http://www.shipstation.com/careers/
       Content-Length:
-      - '1669'
+      - '187'
       Connection:
       - keep-alive
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3siY2FycmllckNvZGUiOiJ1cHMiLCJjb2RlIjoidXBzX2dyb3VuZCIsIm5h
-        bWUiOiJVUFMgR3JvdW5kIiwiZG9tZXN0aWMiOnRydWUsImludGVybmF0aW9u
-        YWwiOmZhbHNlfSx7ImNhcnJpZXJDb2RlIjoidXBzIiwiY29kZSI6InVwc19z
-        dGFuZGFyZCIsIm5hbWUiOiJVUFMgU3RhbmRhcmQiLCJkb21lc3RpYyI6ZmFs
-        c2UsImludGVybmF0aW9uYWwiOnRydWV9LHsiY2FycmllckNvZGUiOiJ1cHMi
-        LCJjb2RlIjoidXBzXzNfZGF5X3NlbGVjdCIsIm5hbWUiOiJVUFMgMyBEYXkg
-        U2VsZWN0wq4iLCJkb21lc3RpYyI6dHJ1ZSwiaW50ZXJuYXRpb25hbCI6ZmFs
-        c2V9LHsiY2FycmllckNvZGUiOiJ1cHMiLCJjb2RlIjoidXBzX3dvcmxkd2lk
-        ZV9leHByZXNzIiwibmFtZSI6IlVQUyBXb3JsZHdpZGUgRXhwcmVzc8KuIiwi
-        ZG9tZXN0aWMiOmZhbHNlLCJpbnRlcm5hdGlvbmFsIjp0cnVlfSx7ImNhcnJp
-        ZXJDb2RlIjoidXBzIiwiY29kZSI6InVwc19ncm91bmQiLCJuYW1lIjoiVVBT
-        IEdyb3VuZCBJbnRlcm5hdGlvbmFsIiwiZG9tZXN0aWMiOmZhbHNlLCJpbnRl
-        cm5hdGlvbmFsIjp0cnVlfSx7ImNhcnJpZXJDb2RlIjoidXBzIiwiY29kZSI6
-        InVwc18ybmRfZGF5X2FpciIsIm5hbWUiOiJVUFMgMm5kIERheSBBaXLCriIs
-        ImRvbWVzdGljIjp0cnVlLCJpbnRlcm5hdGlvbmFsIjpmYWxzZX0seyJjYXJy
-        aWVyQ29kZSI6InVwcyIsImNvZGUiOiJ1cHNfd29ybGR3aWRlX2V4cHJlc3Nf
-        cGx1cyIsIm5hbWUiOiJVUFMgV29ybGR3aWRlIEV4cHJlc3MgUGx1c8KuIiwi
-        ZG9tZXN0aWMiOmZhbHNlLCJpbnRlcm5hdGlvbmFsIjp0cnVlfSx7ImNhcnJp
-        ZXJDb2RlIjoidXBzIiwiY29kZSI6InVwc193b3JsZHdpZGVfZXhwZWRpdGVk
-        IiwibmFtZSI6IlVQUyBXb3JsZHdpZGUgRXhwZWRpdGVkwq4iLCJkb21lc3Rp
-        YyI6ZmFsc2UsImludGVybmF0aW9uYWwiOnRydWV9LHsiY2FycmllckNvZGUi
-        OiJ1cHMiLCJjb2RlIjoidXBzXzJuZF9kYXlfYWlyX2FtIiwibmFtZSI6IlVQ
-        UyAybmQgRGF5IEFpciBBTcKuIiwiZG9tZXN0aWMiOnRydWUsImludGVybmF0
-        aW9uYWwiOmZhbHNlfSx7ImNhcnJpZXJDb2RlIjoidXBzIiwiY29kZSI6InVw
-        c19uZXh0X2RheV9haXJfc2F2ZXIiLCJuYW1lIjoiVVBTIE5leHQgRGF5IEFp
-        ciBTYXZlcsKuIiwiZG9tZXN0aWMiOnRydWUsImludGVybmF0aW9uYWwiOmZh
-        bHNlfSx7ImNhcnJpZXJDb2RlIjoidXBzIiwiY29kZSI6InVwc193b3JsZHdp
-        ZGVfc2F2ZXIiLCJuYW1lIjoiVVBTIFdvcmxkd2lkZSBTYXZlcsKuIiwiZG9t
-        ZXN0aWMiOmZhbHNlLCJpbnRlcm5hdGlvbmFsIjp0cnVlfSx7ImNhcnJpZXJD
-        b2RlIjoidXBzIiwiY29kZSI6InVwc19uZXh0X2RheV9haXIiLCJuYW1lIjoi
-        VVBTIE5leHQgRGF5IEFpcsKuIiwiZG9tZXN0aWMiOnRydWUsImludGVybmF0
-        aW9uYWwiOmZhbHNlfSx7ImNhcnJpZXJDb2RlIjoidXBzIiwiY29kZSI6InVw
-        c19uZXh0X2RheV9haXJfZWFybHlfYW0iLCJuYW1lIjoiVVBTIE5leHQgRGF5
-        IEFpcsKuIEVhcmx5IEFNwq4iLCJkb21lc3RpYyI6dHJ1ZSwiaW50ZXJuYXRp
-        b25hbCI6ZmFsc2V9LHsiY2FycmllckNvZGUiOiJ1cHMiLCJjb2RlIjoidXBz
-        X25leHRfZGF5X2FpciIsIm5hbWUiOiJVUFMgTmV4dCBEYXkgQWlyIEludGVy
-        bmF0aW9uYWwiLCJkb21lc3RpYyI6ZmFsc2UsImludGVybmF0aW9uYWwiOnRy
-        dWV9XQ==
+      encoding: UTF-8
+      string: '[{"name":"Stamps.com","code":"stamps_com","accountNumber":"sshaaban-128n","requiresFundedAccount":true,"balance":9.5400,"nickname":"NuRelm
+        Dev","shippingProviderId":83346,"primary":true}]'
     http_version: 
-  recorded_at: Thu, 19 Feb 2015 15:52:57 GMT
+  recorded_at: Fri, 25 Jan 2019 16:53:13 GMT
 - request:
-    method: post
-    uri: https://562d5d49ceef416b89d077d96c65420c:7ae1264669e845a98052092c7801a704@ssapi.shipstation.com/Orders/CreateOrder
+    method: get
+    uri: https://32d7b78b1ec14471a73e79a70a962686:248087554b354f68a39270c1e9eb0807@ssapi.shipstation.com/Carriers/ListServices?carrierCode=stamps_com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip
+      User-Agent:
+      - unirest-ruby/1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 25 Jan 2019 16:53:13 GMT
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      Server:
+      - Microsoft-IIS/8.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Newrelic-App-Data:
+      - PxQGVFZXCgITXFFRAAQBVV0TGhE1AwE2QgNWEVlbQFtcCxY2VANyMi0ZdAAUEVFWQhdOLl5CQzUBQ0BaAQMQQBxSFlIUCBoDA10LUQJUH09VGhVQIFJ9CnJRUSR1BQYkU3UBEU4AAg5DB2U=
+      X-Powered-By:
+      - ASP.NET
+      X-Rate-Limit-Limit:
+      - '40'
+      X-Rate-Limit-Remaining:
+      - '38'
+      X-Rate-Limit-Reset:
+      - '47'
+      X-Shipstation-Jobs:
+      - I see you like to Hack!  You should work with us!
+      X-Shipstation-Jobs-Link:
+      - http://www.shipstation.com/careers/
+      Content-Length:
+      - '1087'
+      Connection:
+      - keep-alive
     body:
       encoding: UTF-8
-      string: '{"customerEmail":null,"customerUsername":null,"orderNumber":null,"orderDate":"2015-02-19
-        10:52:57 -0500","paymentDate":"2015-02-19 10:52:57 -0500","orderStatus":"awaiting_shipment","shipTo":null,"billTo":null,"customerNotes":null,"internalNotes":null,"gift":null,"packageCode":"package","advancedOptions":{"storeId":null,"customfield1":null,"customfield2":null,"customfield3":null},"items":[],"carrierCode":"ups","serviceCode":"ups_standard"}'
+      string: '[{"carrierCode":"stamps_com","code":"usps_first_class_mail","name":"USPS
+        First Class Mail","domestic":true,"international":false},{"carrierCode":"stamps_com","code":"usps_media_mail","name":"USPS
+        Media Mail","domestic":true,"international":false},{"carrierCode":"stamps_com","code":"usps_parcel_select","name":"USPS
+        Parcel Select Ground","domestic":true,"international":false},{"carrierCode":"stamps_com","code":"usps_priority_mail","name":"USPS
+        Priority Mail","domestic":true,"international":false},{"carrierCode":"stamps_com","code":"usps_priority_mail_express","name":"USPS
+        Priority Mail Express","domestic":true,"international":false},{"carrierCode":"stamps_com","code":"usps_first_class_mail_international","name":"USPS
+        First Class Mail Intl","domestic":false,"international":true},{"carrierCode":"stamps_com","code":"usps_priority_mail_international","name":"USPS
+        Priority Mail Intl","domestic":false,"international":true},{"carrierCode":"stamps_com","code":"usps_priority_mail_express_international","name":"USPS
+        Priority Mail Express Intl","domestic":false,"international":true}]'
+    http_version: 
+  recorded_at: Fri, 25 Jan 2019 16:53:14 GMT
+- request:
+    method: post
+    uri: https://32d7b78b1ec14471a73e79a70a962686:248087554b354f68a39270c1e9eb0807@ssapi.shipstation.com/Orders/CreateOrder
+    body:
+      encoding: UTF-8
+      string: '{"customerEmail":null,"customerUsername":null,"orderNumber":null,"orderDate":"2019-01-25
+        16:53:08 +0000","paymentDate":"2019-01-25 16:53:08 +0000","orderStatus":"awaiting_shipment","shipTo":null,"billTo":null,"customerNotes":null,"internalNotes":null,"gift":null,"packageCode":"package","advancedOptions":{"storeId":null,"customfield1":null,"customfield2":null,"customfield3":null},"items":[],"carrierCode":"stamps_com","serviceCode":"usps_first_class_mail"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -153,7 +136,7 @@ http_interactions:
       User-Agent:
       - unirest-ruby/1.1
       Content-Length:
-      - '442'
+      - '458'
   response:
     status:
       code: 400
@@ -164,7 +147,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 19 Feb 2015 15:53:12 GMT
+      - Fri, 25 Jan 2019 16:53:13 GMT
       Expires:
       - "-1"
       Pragma:
@@ -173,14 +156,20 @@ http_interactions:
       - Microsoft-IIS/8.0
       X-Aspnet-Version:
       - 4.0.30319
+      X-Newrelic-App-Data:
+      - PxQGVFZXCgITXFFRAAQBVV0TGhE1AwE2QgNWEVlbQFtcCxYgYjEcGQdZWRUUDFRfVRYcTUxQVBINXlhOTR0KBk1AFFIWCAQCClwBVx1RHVJXBwVYU1EUBwVcTUADCXYlIAACdyBVVyN1Un0jGhRSU18WXDw=
       X-Powered-By:
       - ASP.NET
       X-Rate-Limit-Limit:
       - '40'
       X-Rate-Limit-Remaining:
-      - '38'
+      - '37'
       X-Rate-Limit-Reset:
-      - '3'
+      - '46'
+      X-Shipstation-Jobs:
+      - I see you like to Hack!  You should work with us!
+      X-Shipstation-Jobs-Link:
+      - http://www.shipstation.com/careers/
       Content-Length:
       - '218'
       Connection:
@@ -191,5 +180,5 @@ http_interactions:
         orderNumber field is required."],"apiOrder.billTo":["The billTo field is required."],"apiOrder.shipTo":["The
         shipTo field is required."]}}'
     http_version: 
-  recorded_at: Thu, 19 Feb 2015 15:52:57 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Fri, 25 Jan 2019 16:53:14 GMT
+recorded_with: VCR 3.0.0

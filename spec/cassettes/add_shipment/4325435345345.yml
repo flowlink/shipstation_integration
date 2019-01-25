@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://562d5d49ceef416b89d077d96c65420c:7ae1264669e845a98052092c7801a704@ssapi.shipstation.com/Carriers
+    uri: https://32d7b78b1ec14471a73e79a70a962686:248087554b354f68a39270c1e9eb0807@ssapi.shipstation.com/Carriers
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 19 Feb 2015 15:53:13 GMT
+      - Fri, 25 Jan 2019 16:55:39 GMT
       Expires:
       - "-1"
       Pragma:
@@ -32,6 +32,64 @@ http_interactions:
       - Microsoft-IIS/8.0
       X-Aspnet-Version:
       - 4.0.30319
+      X-Newrelic-App-Data:
+      - PxQGVFZXCgITXFFRAAQBVV0TGhE1AwE2QgNWEVlbQFtcCxY2VANyMi0ZdAAUEVFWQhdOLl5CQ0RIARgDTlZNVABXDVoAARgfAkkbVXRXASRVAg5RVVoLBggiJUAbV1YKF1Rr
+      X-Powered-By:
+      - ASP.NET
+      X-Rate-Limit-Limit:
+      - '40'
+      X-Rate-Limit-Remaining:
+      - '37'
+      X-Rate-Limit-Reset:
+      - '21'
+      X-Shipstation-Jobs:
+      - I see you like to Hack!  You should work with us!
+      X-Shipstation-Jobs-Link:
+      - http://www.shipstation.com/careers/
+      Content-Length:
+      - '187'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Stamps.com","code":"stamps_com","accountNumber":"sshaaban-128n","requiresFundedAccount":true,"balance":9.5400,"nickname":"NuRelm
+        Dev","shippingProviderId":83346,"primary":true}]'
+    http_version: 
+  recorded_at: Fri, 25 Jan 2019 16:55:40 GMT
+- request:
+    method: get
+    uri: https://32d7b78b1ec14471a73e79a70a962686:248087554b354f68a39270c1e9eb0807@ssapi.shipstation.com/Carriers/ListServices?carrierCode=stamps_com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip
+      User-Agent:
+      - unirest-ruby/1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 25 Jan 2019 16:55:40 GMT
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      Server:
+      - Microsoft-IIS/8.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Newrelic-App-Data:
+      - PxQGVFZXCgITXFFRAAQBVV0TGhE1AwE2QgNWEVlbQFtcCxY2VANyMi0ZdAAUEVFWQhdOLl5CQzUBQ0BaAQMQQBxSFlIUCBoCBFEAWQVNHlNIFHMlIyV7dXEiU1sCBXNXVwYUHwQHDxFVPw==
       X-Powered-By:
       - ASP.NET
       X-Rate-Limit-Limit:
@@ -39,106 +97,31 @@ http_interactions:
       X-Rate-Limit-Remaining:
       - '36'
       X-Rate-Limit-Reset:
-      - '1'
+      - '20'
+      X-Shipstation-Jobs:
+      - I see you like to Hack!  You should work with us!
+      X-Shipstation-Jobs-Link:
+      - http://www.shipstation.com/careers/
       Content-Length:
-      - '98'
+      - '1087'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '[{"name":"UPS","code":"ups","accountNumber":"R96E03","requiresFundedAccount":false,"balance":0.0}]'
+      string: '[{"carrierCode":"stamps_com","code":"usps_first_class_mail","name":"USPS
+        First Class Mail","domestic":true,"international":false},{"carrierCode":"stamps_com","code":"usps_media_mail","name":"USPS
+        Media Mail","domestic":true,"international":false},{"carrierCode":"stamps_com","code":"usps_parcel_select","name":"USPS
+        Parcel Select Ground","domestic":true,"international":false},{"carrierCode":"stamps_com","code":"usps_priority_mail","name":"USPS
+        Priority Mail","domestic":true,"international":false},{"carrierCode":"stamps_com","code":"usps_priority_mail_express","name":"USPS
+        Priority Mail Express","domestic":true,"international":false},{"carrierCode":"stamps_com","code":"usps_first_class_mail_international","name":"USPS
+        First Class Mail Intl","domestic":false,"international":true},{"carrierCode":"stamps_com","code":"usps_priority_mail_international","name":"USPS
+        Priority Mail Intl","domestic":false,"international":true},{"carrierCode":"stamps_com","code":"usps_priority_mail_express_international","name":"USPS
+        Priority Mail Express Intl","domestic":false,"international":true}]'
     http_version: 
-  recorded_at: Thu, 19 Feb 2015 15:52:59 GMT
-- request:
-    method: get
-    uri: https://562d5d49ceef416b89d077d96c65420c:7ae1264669e845a98052092c7801a704@ssapi.shipstation.com/Carriers/ListServices?carrierCode=ups
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*; q=0.5, application/xml"
-      Accept-Encoding:
-      - gzip
-      User-Agent:
-      - unirest-ruby/1.1
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Thu, 19 Feb 2015 15:53:13 GMT
-      Expires:
-      - "-1"
-      Pragma:
-      - no-cache
-      Server:
-      - Microsoft-IIS/8.0
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      X-Rate-Limit-Limit:
-      - '40'
-      X-Rate-Limit-Remaining:
-      - '35'
-      X-Rate-Limit-Reset:
-      - '1'
-      Content-Length:
-      - '1669'
-      Connection:
-      - keep-alive
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3siY2FycmllckNvZGUiOiJ1cHMiLCJjb2RlIjoidXBzX2dyb3VuZCIsIm5h
-        bWUiOiJVUFMgR3JvdW5kIiwiZG9tZXN0aWMiOnRydWUsImludGVybmF0aW9u
-        YWwiOmZhbHNlfSx7ImNhcnJpZXJDb2RlIjoidXBzIiwiY29kZSI6InVwc19z
-        dGFuZGFyZCIsIm5hbWUiOiJVUFMgU3RhbmRhcmQiLCJkb21lc3RpYyI6ZmFs
-        c2UsImludGVybmF0aW9uYWwiOnRydWV9LHsiY2FycmllckNvZGUiOiJ1cHMi
-        LCJjb2RlIjoidXBzXzNfZGF5X3NlbGVjdCIsIm5hbWUiOiJVUFMgMyBEYXkg
-        U2VsZWN0wq4iLCJkb21lc3RpYyI6dHJ1ZSwiaW50ZXJuYXRpb25hbCI6ZmFs
-        c2V9LHsiY2FycmllckNvZGUiOiJ1cHMiLCJjb2RlIjoidXBzX3dvcmxkd2lk
-        ZV9leHByZXNzIiwibmFtZSI6IlVQUyBXb3JsZHdpZGUgRXhwcmVzc8KuIiwi
-        ZG9tZXN0aWMiOmZhbHNlLCJpbnRlcm5hdGlvbmFsIjp0cnVlfSx7ImNhcnJp
-        ZXJDb2RlIjoidXBzIiwiY29kZSI6InVwc19ncm91bmQiLCJuYW1lIjoiVVBT
-        IEdyb3VuZCBJbnRlcm5hdGlvbmFsIiwiZG9tZXN0aWMiOmZhbHNlLCJpbnRl
-        cm5hdGlvbmFsIjp0cnVlfSx7ImNhcnJpZXJDb2RlIjoidXBzIiwiY29kZSI6
-        InVwc18ybmRfZGF5X2FpciIsIm5hbWUiOiJVUFMgMm5kIERheSBBaXLCriIs
-        ImRvbWVzdGljIjp0cnVlLCJpbnRlcm5hdGlvbmFsIjpmYWxzZX0seyJjYXJy
-        aWVyQ29kZSI6InVwcyIsImNvZGUiOiJ1cHNfd29ybGR3aWRlX2V4cHJlc3Nf
-        cGx1cyIsIm5hbWUiOiJVUFMgV29ybGR3aWRlIEV4cHJlc3MgUGx1c8KuIiwi
-        ZG9tZXN0aWMiOmZhbHNlLCJpbnRlcm5hdGlvbmFsIjp0cnVlfSx7ImNhcnJp
-        ZXJDb2RlIjoidXBzIiwiY29kZSI6InVwc193b3JsZHdpZGVfZXhwZWRpdGVk
-        IiwibmFtZSI6IlVQUyBXb3JsZHdpZGUgRXhwZWRpdGVkwq4iLCJkb21lc3Rp
-        YyI6ZmFsc2UsImludGVybmF0aW9uYWwiOnRydWV9LHsiY2FycmllckNvZGUi
-        OiJ1cHMiLCJjb2RlIjoidXBzXzJuZF9kYXlfYWlyX2FtIiwibmFtZSI6IlVQ
-        UyAybmQgRGF5IEFpciBBTcKuIiwiZG9tZXN0aWMiOnRydWUsImludGVybmF0
-        aW9uYWwiOmZhbHNlfSx7ImNhcnJpZXJDb2RlIjoidXBzIiwiY29kZSI6InVw
-        c19uZXh0X2RheV9haXJfc2F2ZXIiLCJuYW1lIjoiVVBTIE5leHQgRGF5IEFp
-        ciBTYXZlcsKuIiwiZG9tZXN0aWMiOnRydWUsImludGVybmF0aW9uYWwiOmZh
-        bHNlfSx7ImNhcnJpZXJDb2RlIjoidXBzIiwiY29kZSI6InVwc193b3JsZHdp
-        ZGVfc2F2ZXIiLCJuYW1lIjoiVVBTIFdvcmxkd2lkZSBTYXZlcsKuIiwiZG9t
-        ZXN0aWMiOmZhbHNlLCJpbnRlcm5hdGlvbmFsIjp0cnVlfSx7ImNhcnJpZXJD
-        b2RlIjoidXBzIiwiY29kZSI6InVwc19uZXh0X2RheV9haXIiLCJuYW1lIjoi
-        VVBTIE5leHQgRGF5IEFpcsKuIiwiZG9tZXN0aWMiOnRydWUsImludGVybmF0
-        aW9uYWwiOmZhbHNlfSx7ImNhcnJpZXJDb2RlIjoidXBzIiwiY29kZSI6InVw
-        c19uZXh0X2RheV9haXJfZWFybHlfYW0iLCJuYW1lIjoiVVBTIE5leHQgRGF5
-        IEFpcsKuIEVhcmx5IEFNwq4iLCJkb21lc3RpYyI6dHJ1ZSwiaW50ZXJuYXRp
-        b25hbCI6ZmFsc2V9LHsiY2FycmllckNvZGUiOiJ1cHMiLCJjb2RlIjoidXBz
-        X25leHRfZGF5X2FpciIsIm5hbWUiOiJVUFMgTmV4dCBEYXkgQWlyIEludGVy
-        bmF0aW9uYWwiLCJkb21lc3RpYyI6ZmFsc2UsImludGVybmF0aW9uYWwiOnRy
-        dWV9XQ==
-    http_version: 
-  recorded_at: Thu, 19 Feb 2015 15:52:59 GMT
+  recorded_at: Fri, 25 Jan 2019 16:55:41 GMT
 - request:
     method: post
-    uri: https://562d5d49ceef416b89d077d96c65420c:7ae1264669e845a98052092c7801a704@ssapi.shipstation.com/Orders/CreateOrder
+    uri: https://32d7b78b1ec14471a73e79a70a962686:248087554b354f68a39270c1e9eb0807@ssapi.shipstation.com/Orders/CreateOrder
     body:
       encoding: UTF-8
       string: '{"customerEmail":null,"customerUsername":null,"orderNumber":"4325435345345","orderDate":"2014-06-02T15:38:23Z","paymentDate":"2014-06-02T15:38:23Z","orderStatus":"awaiting_shipment","shipTo":{"name":"Bruno
@@ -147,7 +130,7 @@ http_interactions:
         Commerce","residential":true},"billTo":{"name":"Bruno Buccolo","street1":"Rua
         Canario, 183","street2":"","street3":null,"city":"São Paulo","state":"SP","postalCode":"01155-030","country":"BR","phone":"5511955111091","company":"Spree
         Commerce","residential":true},"customerNotes":null,"internalNotes":null,"gift":null,"packageCode":"package","advancedOptions":{"storeId":null,"customfield1":null,"customfield2":null,"customfield3":null},"items":[{"lineItemKey":null,"sku":"SPREE-T-SHIRT","name":"Spree
-        T-Shirt","imageUrl":null,"quantity":9,"unitPrice":9}],"carrierCode":"ups","serviceCode":"ups_ground"}'
+        T-Shirt","imageUrl":null,"quantity":9,"unitPrice":9.0}],"carrierCode":"stamps_com","serviceCode":"usps_first_class_mail"}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -158,7 +141,7 @@ http_interactions:
       User-Agent:
       - unirest-ruby/1.1
       Content-Length:
-      - '989'
+      - '1009'
   response:
     status:
       code: 200
@@ -169,7 +152,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 19 Feb 2015 15:53:14 GMT
+      - Fri, 25 Jan 2019 16:55:41 GMT
       Expires:
       - "-1"
       Pragma:
@@ -178,65 +161,81 @@ http_interactions:
       - Microsoft-IIS/8.0
       X-Aspnet-Version:
       - 4.0.30319
+      X-Newrelic-App-Data:
+      - PxQGVFZXCgITXFFRAAQBVV0TGhE1AwE2QgNWEVlbQFtcCxY2VANyMi0ZeBMCBkpAHycTB1ZFUikWVVNBQEpTTABOCEwKCwcGC1ILTQBRA1tIFHRSIlIBBQNUU1pzcHVXUgAUHwQHDxFVPw==
       X-Powered-By:
       - ASP.NET
       X-Rate-Limit-Limit:
       - '40'
       X-Rate-Limit-Remaining:
-      - '34'
+      - '35'
       X-Rate-Limit-Reset:
-      - '1'
+      - '19'
+      X-Shipstation-Jobs:
+      - I see you like to Hack!  You should work with us!
+      X-Shipstation-Jobs-Link:
+      - http://www.shipstation.com/careers/
       Content-Length:
-      - '1978'
+      - '2393'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        eyJvcmRlcklkIjo5NjAyMDc4Mywib3JkZXJOdW1iZXIiOiI0MzI1NDM1MzQ1
-        MzQ1Iiwib3JkZXJLZXkiOiIwY2IxYzhmNDA2MGI0NmE2YmJlMTY1OGJlMGQy
-        YzRmYSIsIm9yZGVyRGF0ZSI6IjIwMTQtMDYtMDJUMDg6Mzg6MjMuMDAwMDAw
-        MCIsInBheW1lbnREYXRlIjoiMjAxNC0wNi0wMlQwODozODoyMy4wMDAwMDAw
-        Iiwib3JkZXJTdGF0dXMiOiJhd2FpdGluZ19zaGlwbWVudCIsImN1c3RvbWVy
-        VXNlcm5hbWUiOm51bGwsImN1c3RvbWVyRW1haWwiOm51bGwsImJpbGxUbyI6
-        eyJuYW1lIjoiQnJ1bm8gQnVjY29sbyIsImNvbXBhbnkiOiJTcHJlZSBDb21t
-        ZXJjZSIsInN0cmVldDEiOiJSdWEgQ2FuYXJpbywgMTgzIiwic3RyZWV0MiI6
-        IiIsInN0cmVldDMiOm51bGwsImNpdHkiOiJTw6NvIFBhdWxvIiwic3RhdGUi
-        OiJTUCIsInBvc3RhbENvZGUiOiIwMTE1NS0wMzAiLCJjb3VudHJ5IjoiQlIi
-        LCJwaG9uZSI6IjU1MTE5NTUxMTEwOTEiLCJyZXNpZGVudGlhbCI6bnVsbCwi
-        YWRkcmVzc1ZlcmlmaWVkIjpudWxsfSwic2hpcFRvIjp7Im5hbWUiOiJCcnVu
-        byBCdWNjb2xvIiwiY29tcGFueSI6IlNwcmVlIENvbW1lcmNlIiwic3RyZWV0
-        MSI6IlJ1YSBDYW5hcmlvLCAxODMiLCJzdHJlZXQyIjoiIiwic3RyZWV0MyI6
-        bnVsbCwiY2l0eSI6IlPDo28gUGF1bG8iLCJzdGF0ZSI6IlNQIiwicG9zdGFs
-        Q29kZSI6IjAxMTU1LTAzMCIsImNvdW50cnkiOiJCUiIsInBob25lIjoiNTUx
-        MTk1NTExMTA5MSIsInJlc2lkZW50aWFsIjp0cnVlLCJhZGRyZXNzVmVyaWZp
-        ZWQiOiJBZGRyZXNzIG5vdCB5ZXQgdmFsaWRhdGVkIn0sIml0ZW1zIjpbeyJv
-        cmRlckl0ZW1JZCI6MTMyOTcxMDY2LCJsaW5lSXRlbUtleSI6bnVsbCwic2t1
-        IjoiU1BSRUUtVC1TSElSVCIsIm5hbWUiOiJTcHJlZSBULVNoaXJ0IiwiaW1h
-        Z2VVcmwiOm51bGwsIndlaWdodCI6bnVsbCwicXVhbnRpdHkiOjksInVuaXRQ
-        cmljZSI6OS4wMCwid2FyZWhvdXNlTG9jYXRpb24iOm51bGwsIm9wdGlvbnMi
-        OltdLCJwcm9kdWN0SWQiOjExMjA5NTQyLCJmdWxmaWxsbWVudFNrdSI6bnVs
-        bH1dLCJhbW91bnRQYWlkIjowLjAwLCJ0YXhBbW91bnQiOjAuMDAsInNoaXBw
-        aW5nQW1vdW50IjowLjAwLCJjdXN0b21lck5vdGVzIjpudWxsLCJpbnRlcm5h
-        bE5vdGVzIjpudWxsLCJnaWZ0IjpmYWxzZSwiZ2lmdE1lc3NhZ2UiOm51bGws
-        InBheW1lbnRNZXRob2QiOm51bGwsInJlcXVlc3RlZFNoaXBwaW5nU2Vydmlj
-        ZSI6bnVsbCwiY2FycmllckNvZGUiOiJ1cHMiLCJzZXJ2aWNlQ29kZSI6InVw
-        c19ncm91bmQiLCJwYWNrYWdlQ29kZSI6InBhY2thZ2UiLCJjb25maXJtYXRp
-        b24iOiJub25lIiwic2hpcERhdGUiOiIyMDE1LTAyLTE5IiwiaG9sZFVudGls
-        RGF0ZSI6bnVsbCwid2VpZ2h0Ijp7InZhbHVlIjowLjAsInVuaXRzIjoib3Vu
-        Y2VzIn0sImRpbWVuc2lvbnMiOm51bGwsImluc3VyYW5jZU9wdGlvbnMiOnsi
-        cHJvdmlkZXIiOm51bGwsImluc3VyZVNoaXBtZW50IjpmYWxzZSwiaW5zdXJl
-        ZFZhbHVlIjowLjB9LCJpbnRlcm5hdGlvbmFsT3B0aW9ucyI6eyJjb250ZW50
-        cyI6Im1lcmNoYW5kaXNlIiwiY3VzdG9tc0l0ZW1zIjpbeyJkZXNjcmlwdGlv
-        biI6IlNwcmVlIFQtU2hpcnQiLCJxdWFudGl0eSI6OSwidmFsdWUiOjkuMDAs
-        Imhhcm1vbml6ZWRUYXJpZmZDb2RlIjpudWxsLCJjb3VudHJ5T2ZPcmlnaW4i
-        OiJVUyJ9XX0sImFkdmFuY2VkT3B0aW9ucyI6eyJ3YXJlaG91c2VJZCI6MjIy
-        OTgsIm5vbk1hY2hpbmFibGUiOmZhbHNlLCJzYXR1cmRheURlbGl2ZXJ5Ijpm
-        YWxzZSwiY29udGFpbnNBbGNvaG9sIjpmYWxzZSwic3RvcmVJZCI6MzA5NzUs
-        ImN1c3RvbUZpZWxkMSI6bnVsbCwiY3VzdG9tRmllbGQyIjpudWxsLCJjdXN0
-        b21GaWVsZDMiOm51bGwsInNvdXJjZSI6bnVsbCwiYmlsbFRvUGFydHkiOm51
-        bGwsImJpbGxUb0FjY291bnQiOm51bGwsImJpbGxUb1Bvc3RhbENvZGUiOm51
-        bGwsImJpbGxUb0NvdW50cnlDb2RlIjpudWxsfSwidGFnSWRzIjpudWxsfQ==
+        eyJvcmRlcklkIjo0OTc1MzQ5NzgsIm9yZGVyTnVtYmVyIjoiNDMyNTQzNTM0
+        NTM0NSIsIm9yZGVyS2V5IjoiN2VjZTNmNjY1OGU2NDk4MjhjZjFlZjA4MjJh
+        NTE2NTciLCJvcmRlckRhdGUiOiIyMDE0LTA2LTAyVDA4OjM4OjIzLjAwMDAw
+        MDAiLCJjcmVhdGVEYXRlIjoiMjAxOS0wMS0yNVQwODo1NTo0MS44MjcwMDAw
+        IiwibW9kaWZ5RGF0ZSI6IjIwMTktMDEtMjVUMDg6NTU6NDEuODI3MDAwMCIs
+        InBheW1lbnREYXRlIjoiMjAxNC0wNi0wMlQwODozODoyMy4wMDAwMDAwIiwi
+        c2hpcEJ5RGF0ZSI6bnVsbCwib3JkZXJTdGF0dXMiOiJhd2FpdGluZ19zaGlw
+        bWVudCIsImN1c3RvbWVySWQiOm51bGwsImN1c3RvbWVyVXNlcm5hbWUiOm51
+        bGwsImN1c3RvbWVyRW1haWwiOm51bGwsImJpbGxUbyI6eyJuYW1lIjoiQnJ1
+        bm8gQnVjY29sbyIsImNvbXBhbnkiOiJTcHJlZSBDb21tZXJjZSIsInN0cmVl
+        dDEiOiJSdWEgQ2FuYXJpbywgMTgzIiwic3RyZWV0MiI6IiIsInN0cmVldDMi
+        Om51bGwsImNpdHkiOiJTw6NvIFBhdWxvIiwic3RhdGUiOiJTUCIsInBvc3Rh
+        bENvZGUiOiIwMTE1NS0wMzAiLCJjb3VudHJ5IjoiQlIiLCJwaG9uZSI6IjU1
+        MTE5NTUxMTEwOTEiLCJyZXNpZGVudGlhbCI6bnVsbCwiYWRkcmVzc1Zlcmlm
+        aWVkIjpudWxsfSwic2hpcFRvIjp7Im5hbWUiOiJCcnVubyBCdWNjb2xvIiwi
+        Y29tcGFueSI6IlNwcmVlIENvbW1lcmNlIiwic3RyZWV0MSI6IlJ1YSBDYW5h
+        cmlvLCAxODMiLCJzdHJlZXQyIjoiIiwic3RyZWV0MyI6bnVsbCwiY2l0eSI6
+        IlPDo28gUGF1bG8iLCJzdGF0ZSI6IlNQIiwicG9zdGFsQ29kZSI6IjAxMTU1
+        LTAzMCIsImNvdW50cnkiOiJCUiIsInBob25lIjoiNTUxMTk1NTExMTA5MSIs
+        InJlc2lkZW50aWFsIjp0cnVlLCJhZGRyZXNzVmVyaWZpZWQiOiJBZGRyZXNz
+        IHZhbGlkYXRpb24gd2FybmluZyJ9LCJpdGVtcyI6W3sib3JkZXJJdGVtSWQi
+        Ojc2MDMwNDMwOSwibGluZUl0ZW1LZXkiOm51bGwsInNrdSI6IlNQUkVFLVQt
+        U0hJUlQiLCJuYW1lIjoiU3ByZWUgVC1TaGlydCIsImltYWdlVXJsIjpudWxs
+        LCJ3ZWlnaHQiOm51bGwsInF1YW50aXR5Ijo5LCJ1bml0UHJpY2UiOjkuMDAs
+        InRheEFtb3VudCI6bnVsbCwic2hpcHBpbmdBbW91bnQiOm51bGwsIndhcmVo
+        b3VzZUxvY2F0aW9uIjpudWxsLCJvcHRpb25zIjpbXSwicHJvZHVjdElkIjpu
+        dWxsLCJmdWxmaWxsbWVudFNrdSI6bnVsbCwiYWRqdXN0bWVudCI6ZmFsc2Us
+        InVwYyI6bnVsbCwiY3JlYXRlRGF0ZSI6IjIwMTktMDEtMjVUMDg6NTU6NDEu
+        ODI3IiwibW9kaWZ5RGF0ZSI6IjIwMTktMDEtMjVUMDg6NTU6NDEuODI3In1d
+        LCJvcmRlclRvdGFsIjo4MS4wMCwiYW1vdW50UGFpZCI6MC4wMCwidGF4QW1v
+        dW50IjowLjAwLCJzaGlwcGluZ0Ftb3VudCI6MC4wMCwiY3VzdG9tZXJOb3Rl
+        cyI6bnVsbCwiaW50ZXJuYWxOb3RlcyI6bnVsbCwiZ2lmdCI6ZmFsc2UsImdp
+        ZnRNZXNzYWdlIjpudWxsLCJwYXltZW50TWV0aG9kIjpudWxsLCJyZXF1ZXN0
+        ZWRTaGlwcGluZ1NlcnZpY2UiOm51bGwsImNhcnJpZXJDb2RlIjoic3RhbXBz
+        X2NvbSIsInNlcnZpY2VDb2RlIjoidXNwc19maXJzdF9jbGFzc19tYWlsIiwi
+        cGFja2FnZUNvZGUiOiJwYWNrYWdlIiwiY29uZmlybWF0aW9uIjoibm9uZSIs
+        InNoaXBEYXRlIjpudWxsLCJob2xkVW50aWxEYXRlIjpudWxsLCJ3ZWlnaHQi
+        OnsidmFsdWUiOjAuMDAsInVuaXRzIjoib3VuY2VzIiwiV2VpZ2h0VW5pdHMi
+        OjF9LCJkaW1lbnNpb25zIjpudWxsLCJpbnN1cmFuY2VPcHRpb25zIjp7InBy
+        b3ZpZGVyIjpudWxsLCJpbnN1cmVTaGlwbWVudCI6ZmFsc2UsImluc3VyZWRW
+        YWx1ZSI6MC4wfSwiaW50ZXJuYXRpb25hbE9wdGlvbnMiOnsiY29udGVudHMi
+        OiJtZXJjaGFuZGlzZSIsImN1c3RvbXNJdGVtcyI6bnVsbCwibm9uRGVsaXZl
+        cnkiOiJyZXR1cm5fdG9fc2VuZGVyIn0sImFkdmFuY2VkT3B0aW9ucyI6eyJ3
+        YXJlaG91c2VJZCI6MTQ2MDAzLCJub25NYWNoaW5hYmxlIjpmYWxzZSwic2F0
+        dXJkYXlEZWxpdmVyeSI6ZmFsc2UsImNvbnRhaW5zQWxjb2hvbCI6ZmFsc2Us
+        Im1lcmdlZE9yU3BsaXQiOmZhbHNlLCJtZXJnZWRJZHMiOltdLCJwYXJlbnRJ
+        ZCI6bnVsbCwic3RvcmVJZCI6MTI3NjYwLCJjdXN0b21GaWVsZDEiOm51bGws
+        ImN1c3RvbUZpZWxkMiI6bnVsbCwiY3VzdG9tRmllbGQzIjpudWxsLCJzb3Vy
+        Y2UiOm51bGwsImJpbGxUb1BhcnR5IjpudWxsLCJiaWxsVG9BY2NvdW50Ijpu
+        dWxsLCJiaWxsVG9Qb3N0YWxDb2RlIjpudWxsLCJiaWxsVG9Db3VudHJ5Q29k
+        ZSI6bnVsbCwiYmlsbFRvTXlPdGhlckFjY291bnQiOm51bGx9LCJ0YWdJZHMi
+        Om51bGwsInVzZXJJZCI6bnVsbCwiZXh0ZXJuYWxseUZ1bGZpbGxlZCI6ZmFs
+        c2UsImV4dGVybmFsbHlGdWxmaWxsZWRCeSI6bnVsbCwibGFiZWxNZXNzYWdl
+        cyI6bnVsbH0=
     http_version: 
-  recorded_at: Thu, 19 Feb 2015 15:52:59 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Fri, 25 Jan 2019 16:55:42 GMT
+recorded_with: VCR 3.0.0

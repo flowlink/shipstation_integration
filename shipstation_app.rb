@@ -54,7 +54,7 @@ class ShipStationApp < EndpointBase::Sinatra::Base
   # storefront concept of a shipment.
   post '/add_shipment' do
     response = add_order_or_shipment(@payload[:shipment])
-    add_object :shipment, return_order
+    add_object :shipment, response
     result 200, "Shipment transmitted to ShipStation: #{response[:shipstation_id]}"
   end
 
